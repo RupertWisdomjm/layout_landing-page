@@ -1,6 +1,6 @@
 @import 'mixins';
 
-.nav {
+.navbar {
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -9,7 +9,7 @@
   z-index: 100;
   top: 0;
   position: absolute;
-  
+
   transition: $transition;
 
   &__logo {
@@ -29,22 +29,21 @@
     cursor: pointer;
     border: none;
 
-
     &--phone {
       @include image-cover('../images/Icon-Phone-call.svg');
     }
 
     &--menu {
       @include image-cover('../images/Icon-Burger-menu.svg');
+
       transition: $transition;
       &:hover {
         @include image-cover('../images/Icon-Burger-menu-hover.svg');
       }
-    } 
+    }
   }
 
   @media (min-width: $breakpoint-tablet) {
-    
     &__logo {
       width: 228px;
       height: 24px;
@@ -84,9 +83,7 @@
 
       &:hover::before {
         opacity: 1;
+      }
     }
   }
-}
-
-
 }
