@@ -1,10 +1,10 @@
-@import 'variables';
-@import 'mixins';
-@import 'navbar';
-@import 'hero';
-@import 'menu';
-@import 'footer';
-@import 'layout';
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'navbar';
+@use 'hero';
+@use 'menu';
+@use 'layout';
+
 /* CSS Reset */
 * {
   margin: 0;

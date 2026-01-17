@@ -1,6 +1,6 @@
 @use 'sass:color';
-@import 'mixins';
-@import 'variables';
+@use 'variables' as *;
+@use 'mixins' as *;
 
 .menu {
   background-color: $color-white;
@@ -81,8 +81,8 @@
     cursor: pointer;
     transition: color $transition;
 
-      &:hover,
-      &:active {
+    &:hover,
+    &:active {
       color: color.adjust($color-black-off, $lightness: 40%);
     }
   }
@@ -112,4 +112,3 @@
     }
   }
 }
-
