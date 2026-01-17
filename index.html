@@ -6,7 +6,11 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Landing Page</title>
+    <title>Bang & Olufsen</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="src/styles/main.scss"
@@ -17,6 +21,34 @@
     ></script>
   </head>
   <body>
-    <h1>Landing Page</h1>
+    <!-- Navigation -->
+    <nav class="nav">
+      <a href="#hero">
+        <img
+          src="../src/images/Logo.svg"
+          alt="logo"
+          class="nav__logo"
+        />
+      </a>
+      <div class="nav__icons">
+        <a
+          href="tel:+12345555555"
+          class="nav__icon nav__icon--phone"
+        ></a>
+        <button class="nav__icon nav__icon--menu"></button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="hero"
+      id="hero"
+    >
+      <h1 class="hero__title">
+        Your senses.
+        <br />
+        Set free.
+      </h1>
+    </section>
   </body>
 </html>
