@@ -4,6 +4,7 @@
 @use 'hero';
 @use 'menu';
 @use 'layout';
+@use 'footer';
 
 /* CSS Reset */
 * {
@@ -78,4 +79,6 @@ h6 {
   overflow-wrap: break-word;
 }
 
+// =========================================
+// Footer
 // =========================================
